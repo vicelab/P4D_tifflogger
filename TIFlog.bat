@@ -1,0 +1,2 @@
+@python TIFlog.py
+@pause
