@@ -16,7 +16,7 @@ root.filename = tkFileDialog.askdirectory()
 if root.filename == '':
     exit(5)
 
-projectpath = root.filename
+projectpath = root.filename.replace('/','\\')
 
 print '\nSearching for TIF files in:'
 print projectpath
@@ -117,7 +117,7 @@ root.filename = tkFileDialog.asksaveasfilename(initialdir=projectpath, title="Sa
 if root.filename == '':
     exit(5)
 
-outputfile = root.filename
+outputfile = root.filename.replace('/','\\')
 
 print outputfile
 
